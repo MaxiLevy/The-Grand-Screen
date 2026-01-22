@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./styles/reset.css" />
+
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <title>The Grand Screen</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">The Grand Screen</div>
+      <nav>
+        <a class="navtitle" href="./index.html">Cartelera</a>
+        <a class="navtitle" href="./historia.html">Historia del cine</a>
+        <a class="navtitle" href="./sobremi.html">Sobre mi proyecto</a>
+        <a class="navtitle" href="./createMovie.html">Formulario</a>
+      </nav>
+      <div class="user">
+        <div class="user-icon">👤</div>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <form>
+          <div class="mb-3">
+            <label for="titleInput" class="form-label">Título</label>
+            <input
+              type="text"
+              class="form-control"
+              id="titleInput"
+              aria-describedby="titleHelp"
+            />
+          </div>
+         <div class="mb-3">
+  <label for="genreInput" class="form-label">Género</label>
+  <div id="genreCheckboxes" class="form-check-group">
+    <div>
+      <input type="checkbox" value="Acción" id="genreAcción">
+      <label for="genreAction">Acción</label>
+    
+      <input type="checkbox" value="Comedia" id="genreComedia">
+      <label for="genreComedy">Comedia</label>
+    
+      <input type="checkbox" value="Drama" id="genreDrama">
+      <label for="genreDrama">Drama</label>
+   
+      <input type="checkbox" value="Terror" id="genreTerror">
+      <label for="genreHorror">Terror</label>
+      
+      <input type="checkbox" value="Suspenso" id="genreSuspenso">
+      <label for="genreSciFi">Suspenso</label>
+    </div>
+
+  </div>
+  <div id="genreInputHelp" class="form-text">
+    Porfavor, seleccione al menos un género.
+  </div>
+</div>
+          </div>
+          <div class="row">
+            <div class="col mb-3">
+              <label for="directorInput" class="form-label">Director</label>
+              <input
+                type="text"
+                class="form-control"
+                id="directorInput"
+                aria-label="Director"
+
+              />
+            </div>
+            <div class="col mb-3">
+              <label for="ratingInput" class="form-label">Calificación</label>
+              <input
+                type="number"
+                class="form-control"
+                id="ratingInput"
+                aria-label="Rating"
+                min="0"
+                max="10"
+              />
+            </div>
+            <div class="col mb-3">
+              <label for="yearInput" class="form-label">Año</label>
+              <input
+                type="number"
+                class="form-control"
+                id="yearInput"
+                aria-label="Year"
+              />
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="durationInput" class="form-label">Duración</label>
+            <input
+              type="text"
+              class="form-control"
+              id="durationInput"
+              aria-label="Duration"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="urlInput" class="form-label">Poster URL</label>
+            <input
+              type="url"
+              class="form-control"
+              id="urlInput"
+              aria-describedby="urlHelp"
+            />
+          </div>
+          <div class="button-container">
+            <button type="submit" class="btn btn-primary submit-btn">
+              Submit
+            </button>
+            <button type="reset" class="btn btn-danger reset-btn">Reset</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  
+    <script src="public/bundle.js"></script>
+    
+  </body>
+</html>
+ 
